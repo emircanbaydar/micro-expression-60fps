@@ -9,3 +9,5 @@ data/
 models/*_noalign.*
 models/*.onnx.data
 .vscode/
+
+CLAUDE.md
