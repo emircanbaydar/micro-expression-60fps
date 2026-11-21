@@ -1,0 +1,21 @@
+# 60 FPS Gerçek Zamanlı Mikro Mimik Analiz Sistemi
+# Faz 1: kamera, hizalama, optical flow, görselleştirme
+opencv-python>=4.10
+mediapipe>=0.10.14
+numpy>=1.26,<3
+
+# Faz 2/3 (STSTNet eğitimi + ONNX çıkarımı) bağımlılıkları
+torch>=2.5
+onnx>=1.16
+onnxruntime>=1.19
+# CASME II kodlama Excel'i (Estimated Emotion) okumak için
+openpyxl>=3.1
+
+# FastAPI servisi (api.py)
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+# TestClient için (fastapi.testclient)
+httpx>=0.27
+# NVIDIA GPU üzerinde ONNX Runtime kullanmak için onnxruntime yerine:
+#   pip install onnxruntime-gpu
